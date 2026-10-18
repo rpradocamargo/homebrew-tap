@@ -1,12 +1,14 @@
 cask "macrolite" do
-  version "0.1.0"
-  sha256 "064aef30ca0bd507602947132d9a19b2c0bc146d3d5470b849f443437b88615e"
+  version "0.1.1"
+  sha256 "b16ce944857264648870f8d4fb1fb1a7cfbf7ce94921807c2d8a0a70ae24c3ac"
 
-  url "https://github.com/rpradocamargo/macrolite/releases/download/v#{version}/Macrolite-macOS.zip"
+  url "https://github.com/rpradocamargo/macrolite/releases/download/v#{version}/MacroLite-macOS-arm64.dmg"
 
-  name "Macrolite"
+  name "MacroLite"
   desc "Open-source desktop macro recorder for macOS"
   homepage "https://github.com/rpradocamargo/macrolite"
 
-  app "Macrolite.app"
+  depends_on arch: :arm64
+
+  app "MacroLite.app"
 end
